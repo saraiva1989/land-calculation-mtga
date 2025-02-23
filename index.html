@@ -144,9 +144,9 @@
 
             let terrenoTotal = terrenoUm + terrenoDois + terrenoTres + terrenoQuatro + terrenoCinco + terrenoSeis + terrenoSete + terrenoOito;
 
-            let terrenoNecessaria = terrenoTotal / quantidadeMagica;
+            let terrenoNecessaria = Math.round((terrenoTotal / quantidadeMagica) * 10);
 
-            document.getElementById('result').textContent = `terrenos necessária: ${terrenoNecessaria.toFixed(2)}`;
+            document.getElementById('result').textContent = `terrenos necessária: ${terrenoNecessaria}`;
         }
 
         function traducao() {
